@@ -4,27 +4,25 @@ body {
 }
 
 .wrapper {
-  width: 1062px;
+  padding: 50px 45px;
+  width: 970px;
   margin: 0 auto;
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.25)
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+  position:relative;
 }
 
 /* Header*/
 header {
-  height: 172px;
-}
-
-.logo {
-  margin-top: 50px;
-  margin-left: 45px;
+  height: 170px;
 }
 
 .menu_box {
-  width: 968px;
+  position: absolute;
+  top: 130px;
+  width: 970px;
   height: 40px;
-  margin: 40px 45px;
   background-color: #575757;
 }
 
@@ -48,14 +46,19 @@ header {
   cursor: pointer;
 }
 
-/*CONTAINER*/
-/*left_menu*/
-.container {
-  margin: 40px 45px;
+/*Content*/
+.content {
+  padding-bottom: 20px;
+}
+
+.content::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .left_menu {
-  float:left;
+  display:inline-block;
   width: 240px;
   border-left: 1px solid #c8c8c8;
   border-right: 1px solid #c8c8c8;
@@ -79,13 +82,9 @@ header {
   color: #2c2c2c;
 }
 
-/*CONTENT*/
-
-.content {
+.box {
   float: right;
   width: 676px;
-  margin-bottom: 20px;
-
 }
 
 .bike {
@@ -103,11 +102,8 @@ header {
   line-height: 1.5;
   color: #2c2c2c;
 }
- /* Footer*/
-footer {
-  clear: both;
-}
 
+ /* Footer*/
 .footer {
   width: 970px;
   height: 40px;
