@@ -1,0 +1,86 @@
+body {
+  background-color: #282828;
+  font-family: Tahoma Arial sans-serif;
+}
+
+a {
+  font-family: Tahoma Arial sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.wrapper {
+  width: 820px;
+  height: 769px;
+  margin: 0 auto;
+  padding: 57px 70px;
+  background-color: #0f0f0f;
+  background-image: url(../img/background.jpg);
+}
+
+/*.wrapper a {
+  font-family: Tahoma Arial sans-serif;
+}*/
+
+/*Header*/
+header {
+  position: relative;
+}
+
+.logotype {
+  width: 266px;
+  height: 147px;
+  display: inline-block;
+}
+
+.contact {
+  position: absolute;
+  right: 10px;
+  bottom: 14px;
+  width: 97px;
+  height: 43px;
+  display:inline-block;
+  font-size: 9px;
+  color: #ffffff;
+}
+
+.contact p span {
+  font-size: 11px;
+  line-height: 2.2;
+}
+
+/*Content*/
+.content img {
+  width: 261px;
+  height: 178px;
+  border: 2px solid #989898;
+}
+
+.countris {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  width: 261px;
+  height: 178px;
+}
+
+.space {
+  margin: 0 12px;
+}
+
+.first_box {
+  padding-bottom: 47px;
+}
+
+.second_box {
+  padding-bottom: 47px;
+}
+
+/*Footer*/
+footer {
+  height: 40px;
+  margin-top: 140px;
+  font-size: 10px;
+  text-align: center;
+  color:  #ffffff;
+}
