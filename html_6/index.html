@@ -4,19 +4,22 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="libs/font_awesome/css/font-awesome.min.css">
   <title>Zazor</title>
 </head>
 <body>
   <div class="wrapper">
     <header>
-      <img class="phone" src="img/phone.png" width="22" height="21" alt="phone">
-      <p class="telephone">(044)123-45-67 (044)567-89-10</p>
+      <div class="phone">
+        <div class="circle_grad"><i class="fa fa-phone" aria-hidden="true"></i></div>
+        <p class="telephone">(044)123-45-67 (044)567-89-10</p>
+      </div>
       <div class="avtoriz">
-        <img class="user" src="img/head.png" alt="user">
+        <i class="fa fa-user" aria-hidden="true"></i>
         <form action="#" class="sign_up">
           <input type="text" name="login" required placeholder="логин">
           <input type="password" name="password" required placeholder="пароль">
-          <input type="button" value="вход">
+          <input type="submit" value="вход">
           <input class="right_btn" type="button" value="регистрция">
         </form>
         <a href="#">забыли пароль?</a>
@@ -167,7 +170,7 @@
         <div class="circle_bl">
         <div class="circle_wt"></div>
       </div>
-      <span class="disc_pd"><p>Диски</p></span>
+      <p class="disc_pd"><span>Диски</span></p>
       </div>
       <div class="check">
         <label><input type="checkbox" name="brand1"><span>Бренд 1</span></label>
