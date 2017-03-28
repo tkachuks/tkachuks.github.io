@@ -79,9 +79,9 @@ input[type="button"] {
   color: #fff;
 }
 
-input[type="submit"]::before {
+input[type="button"]::before {
   content: '';
-  margin: 0 11px 0 11px;
+  margin: 0 7px 0 7px;
   border-left: 1px solid #fff;
 }
 
