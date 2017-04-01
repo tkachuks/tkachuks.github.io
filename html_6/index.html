@@ -42,9 +42,11 @@
           <li><a class="aticle" href="#">Статьи</a></li>
           <li><a class="contact" href="#">Контакты</a></li>
         </ul>
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        <p class="prod"><span>товаров:</span><span class="color">0</span></p>
-        <p class="count"><span>на сумму:</span><span class="color">0,00 грн</span></p>
+        <div class="cart">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <p class="prod"><span>товаров:</span><span class="color">0</span></p>
+          <p class="count"><span>на сумму:</span><span class="color">0,00 грн</span></p>
+        </div>
     </nav>
   <div class="bonus_form">
     <div class="seach_avto"></div>
@@ -54,12 +56,12 @@
   </div>
   <div class="content">
     <aside class="sidebar_left">
-      <div class="katalog">
+      <h2>
         <div class="circle">
           <i class="fa fa-file-text-o" aria-hidden="true"></i>
         </div>
-        <h2>Каталог продукции:</h2>
-      </div>
+        Каталог продукции:
+      </h2>
       <section>
         <div class="tires_lft">
           <div class="circle_bl">
@@ -104,94 +106,119 @@
       </section>
     </aside>
     <div class="main">
-      <figure class="box_out mrg_lft">
-        <a href="#" class="link">Goodyear</a>
-        <p>Ultra Grip Extreme</p>
-        <a href="#" class="box goodyear"></a>
-        <figcaption>
-          <a class="bold" href="#">90.00 грн.</a>
-        </figcaption>
-      </figure>
-      <figure class="box_out">
-        <a href="#" class="link">Nokian</a>
-        <p>Hakkapelitta R</p>
-        <a href="#" class="box nokian"></a>
-        <figcaption>
-          <a class="bold" href="#">115.00 грн.</a>
-        </figcaption>
-      </figure>
-      <figure class="box_out mrg_rgt">
-        <a href="#" class="link">Hankook</a>
-        <p>K 708 155/65 R14</p>
-        <a href="#" class="box hankook"></a>
-        <figcaption>
-          <a class="bold" href="#">393.00 грн.</a>
-        </figcaption>
-      </figure>
-      <figure class="box_out mrg_lft">
-        <a href="#" class="link">Goodyear</a>
-        <p>Ultra Grip Extreme</p>
-        <a href="#" class="box goodyear"></a>
-        <figcaption>
-          <a class="bold" href="#">90.00 грн.</a>
-        </figcaption>
-      </figure>
-      <figure class="box_out">
-        <a href="#" class="link">Nokian</a>
-        <p>Hakkapelitta R</p>
-        <a href="#" class="box nokian"></a>
-        <figcaption>
-          <a class="bold" href="#">115.00 грн.</a>
-        </figcaption>
-      </figure>
-      <figure class="box_out mrg_rgt">
-        <a href="#" class="link">Hankook</a>
-        <p>K 708 155/65 R14</p>
-        <a href="#" class="box hankook"></a>
-        <figcaption>
-          <a class="bold" href="#">393.00 грн.</a>
-        </figcaption>
-      </figure>
-      <figure class="box_out mrg_lft">
-        <a href="#" class="link">Goodyear</a>
-        <p>Ultra Grip Extreme</p>
-        <a href="#" class="box goodyear"></a>
-        <figcaption>
-          <a class="bold" href="#">90.00 грн.</a>
-        </figcaption>
-      </figure>
-      <figure class="box_out">
-        <a href="#" class="link">Nokian</a>
-        <p>Hakkapelitta R</p>
-        <a href="#" class="box nokian"></a>
-        <figcaption>
-          <a class="bold" href="#">115.00 грн.</a>
-        </figcaption>
-      </figure>
-      <figure class="box_out mrg_rgt">
-        <a href="#" class="link">Hankook</a>
-        <p>K 708 155/65 R14</p>
-        <a href="#" class="box hankook"></a>
-        <figcaption>
-          <a class="bold" href="#">393.00 грн.</a>
-        </figcaption>
-      </figure>
+      <a href="#" class="box_out">
+        <figure>
+          <figcaotion>
+            <h3 class="link">Goodyear</h3>
+            <p class="black">Ultra Grip Extreme</p>
+          </figcaotion>
+          <div href="#" class="box goodyear"></div>
+          <p class="bold">90.00 грн.</p>
+        </figure>
+      </a>
+      <a href="#" class="box_out">
+        <figure>
+          <figcaotion>
+            <h3 class="link">Nokian</h3>
+            <p class="black">Hakkapelitta R</p>
+          </figcaotion>
+          <div href="#" class="box nokian"></div>
+          <p class="bold">115.00 грн.</p>
+        </figure>
+      </a>
+      <a href="#" class="box_out">
+        <figure>
+          <figcaotion>
+            <h3 class="link">Hankook</h3>
+            <p class="black">K 708 155/65 R14</p>
+          </figcaotion>
+          <div href="#" class="box hankook"></div>
+          <p class="bold">393.00 грн.</p>
+        </figure>
+      </a>
+      <a href="#" class="box_out">
+        <figure>
+          <figcaotion>
+            <h3 class="link">Goodyear</h3>
+            <p class="black">Ultra Grip Extreme</p>
+          </figcaotion>
+          <div href="#" class="box goodyear"></div>
+          <p class="bold">90.00 грн.</p>
+        </figure>
+      </a>
+      <a href="#" class="box_out">
+        <figure>
+          <figcaotion>
+            <h3 class="link">Nokian</h3>
+            <p class="black">Hakkapelitta R</p>
+          </figcaotion>
+          <div href="#" class="box nokian"></div>
+          <p class="bold">115.00 грн.</p>
+        </figure>
+      </a>
+      <a href="#" class="box_out">
+        <figure>
+          <figcaotion>
+            <h3 class="link">Hankook</h3>
+            <p class="black">K 708 155/65 R14</p>
+          </figcaotion>
+          <div href="#" class="box hankook"></div>
+          <p class="bold">393.00 грн.</p>
+        </figure>
+      </a>
+      <a href="#" class="box_out">
+        <figure>
+          <figcaotion>
+            <h3 class="link">Goodyear</h3>
+            <p class="black">Ultra Grip Extreme</p>
+          </figcaotion>
+          <div href="#" class="box goodyear"></div>
+          <p class="bold">90.00 грн.</p>
+        </figure>
+      </a>
+      <a href="#" class="box_out">
+        <figure>
+          <figcaotion>
+            <h3 class="link">Nokian</h3>
+            <p class="black">Hakkapelitta R</p>
+          </figcaotion>
+          <div href="#" class="box nokian"></div>
+          <p class="bold">115.00 грн.</p>
+        </figure>
+      </a>
+      <a href="#" class="box_out">
+        <figure>
+          <figcaotion>
+            <h3 class="link">Hankook</h3>
+            <p class="black">K 708 155/65 R14</p>
+          </figcaotion>
+          <div href="#" class="box hankook"></div>
+          <p class="bold">393.00 грн.</p>
+        </figure>
+      </a>
     </div>
     <aside class="sidebar_right">
-      <div class="katalog brand">
-        <div class="circle">
-          <i class="fa fa-file-text-o" aria-hidden="true"></i>
-        </div>
-        <h2>Бренды:</h2>
-      </div>
+        <h2>
+          <div class="circle">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+          </div>
+          Бренды:
+        </h2>
       <form>
-      <div class="tires_lft tires_rgt">
+      <!-- <div class="tires_lft tires_rgt">
         <div class="circle_bl">
           <div class="circle_wt"></div>
         </div>
         <h3>Шины</h3>
-      </div>
+      </div> -->
       <fieldset class="check">
+        <legend class="tires_lft tires_rgt">
+          <div class="circle_bl">
+            <div class="circle_wt">
+          </div>
+          </div>
+          Шини
+        </legend>
         <label><input type="checkbox" name="brand1"><span>Бренд 1</span></label>
         <label><input type="checkbox" name="brand2"><span>Бренд 2</span></label>
         <label><input type="checkbox" name="brand3"><span>Бренд 3</span></label>

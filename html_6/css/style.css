@@ -68,7 +68,6 @@ input[type="password"] {
   height: 15px;
   margin: 0 3px 0 3px;
 }
-
 input[type="submit"],
 input[type="button"] {
   padding: 1px 5px;
@@ -78,14 +77,12 @@ input[type="button"] {
   font-size: 10px;
   color: #fff;
 }
-
 .left_link{
   margin-top: 6px;
   font-size: 10px;
   text-decoration: none;
   color: #fff;
 }
-
 .left_link::before {
   content: '';
   margin-right: 5px;
@@ -93,7 +90,6 @@ input[type="button"] {
 }
 
 /*NAVI*/
-
 .navi {
   padding-top: 2px;
   padding-bottom: 5px;
@@ -124,6 +120,7 @@ input[type="button"] {
 .navi .mail {
   background-position: -40px 0;
 }
+/*______________________*/
 
 .zazor {
   margin-bottom: 3px;
@@ -150,8 +147,13 @@ nav p {
   color: #929b9f;
 }
 
-.fa-shopping-cart {
+.cart {
+  display: flex;
+  align-items: center;
   padding-left: 65px;
+}
+
+.fa-shopping-cart {
   color: #0d5a8f;
   padding-right: 5px;
 }
@@ -181,43 +183,34 @@ nav a {
 .company {
   padding: 5px 17px 5px 20px;
 }
-
 .pay {
   padding: 5px 10px;
 }
-
 .post {
   padding: 5px 14px;
 }
-
 .aticle {
   padding: 5px 9px;
 }
-
 .contact {
   padding: 5px 10px;
 }
-
  .company:hover {
    background-color: #0d365a;
    border-radius: 15px;
  }
-
  .pay:hover {
    background-color: #0d365a;
    border-radius: 15px;
  }
-
  .post:hover {
    background-color: #0d365a;
    border-radius: 15px;
  }
-
  .aticle:hover {
    background-color: #0d365a;
    border-radius: 15px;
  }
-
  .contact:hover {
    background-color: #0d365a;
    border-radius: 15px;
@@ -236,7 +229,6 @@ nav a {
   border: 1px solid #b9b9b9;
   border-radius: 16px;
 }
-
 .seach_tires {
   width: 191px;
   height: 134px;
@@ -244,7 +236,6 @@ nav a {
   border: 1px solid #b9b9b9;
   border-radius: 16px;
 }
-
 .seach_disc {
   width: 265px;
   height: 132px;
@@ -252,7 +243,6 @@ nav a {
   border: 1px solid #b9b9b9;
   border-radius: 16px;
 }
-
 /*content*/
 .content{
   display: flex;
@@ -262,11 +252,9 @@ nav a {
 .sidebar_left {
   width: 191px;
 }
-
 .main {
   width: 525px;
 }
-
 .sidebar_right {
   width: 195px;
 }
@@ -277,25 +265,20 @@ h3 {
   font-weight: normal;
 }
 
-.katalog {
+h2 {
   display: flex;
+  align-items: center;
   width: 175px;
   margin-top: 3px;
-  margin-left: -2px;
   margin-bottom: 12px;
   padding: 3px;
   height: 20px;
   border: 1px solid #8b979c;
   border-radius: 20px;
   font-size: 13px;
+  font-weight: normal;
   text-transform: uppercase;
   color: #4a6680;
-}
-
-.katalog h2 {
-  font-weight: normal;
-  padding-top: 4px;
-  padding-left: 5px;
 }
 
 .circle {
@@ -303,6 +286,7 @@ h3 {
   height: 20px;
   background-color: #144a6d;
   border-radius: 50%;
+  margin-right: 5px;
 }
 
 .fa-file-text-o {
@@ -338,7 +322,6 @@ h3 {
   text-transform: uppercase;
   color: #4a6680;
 }
-
 .circle_wt {
   width: 11px;
   height: 11px;
@@ -356,24 +339,20 @@ h3 {
   list-style-position: inside;
   color: #465961;
 }
-
 .list_lft a:hover {
   font: 14px Arial, Tahoma, sans-serif;
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
 }
-
 .disc_lft {
   margin-top: 1px;
 }
-
 .list_lft li>a {
   color: #465961;
   text-decoration: none;
   font-size: 13px;
 }
-
 .brand {
   margin-top: 2px;
   margin-left: 9px;
@@ -389,11 +368,9 @@ label {
   color: #4a6680;
   text-align: center;
 }
-
 span {
   padding-top: 3px;
 }
-
 .tires_rgt {
   margin-left: 23px;
   width: 129px;
@@ -405,11 +382,9 @@ span {
   line-height: 1.7;
   padding-bottom: 10px;
 }
-
 input[type="checkbox"] {
   margin-top: 8px;
 }
-
 .disc_rgt {
   margin-left: 22px;
   margin-bottom: 3px;
@@ -417,11 +392,26 @@ input[type="checkbox"] {
   padding-left: 4px;
   padding-top: 2px;
 }
-
 .disc_pd {
   padding-left: 7px;
   padding-top: 6px;
 }
+
+/*legend {
+  display: flex;
+  border: 1px solid #8b979c;
+  border-radius: 20px;
+  width: 144px;
+  padding: 4px 0 3px 6px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #4a6680;
+  margin-left: 23px;
+  width: 129px;
+  padding-top: 5px;
+  padding-left: 7px;
+  font-weight: normal;
+}*/
 
 .button {
   width: 78px;
@@ -464,21 +454,16 @@ figure {
 }
 
 .box_out {
+  display: block;
   text-align: center;
+  font-size: 13px;
+  text-decoration: none;
   margin-top: 14px;
   margin-bottom: 9px;
 }
 
-.mrg_lft {
-  margin-left: 8px;
-}
-
-.mrg_rgt {
-  margin-right: 15px;
-}
-
-.box_out {
-  font-size: 13px;
+.black {
+  color: #000;
 }
 
 .link {
@@ -503,19 +488,16 @@ figure {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .nokian {
   background-image: url(../img/tires2.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .hankook {
   background-image: url(../img/tires3.png);
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .brandslogo {
   width: 680px;
   margin: 0 auto;
@@ -545,28 +527,23 @@ figure {
   width: 80px;
   background-position: -203px;
 }
-
 .cooper {
   width: 61px;
   background-position: -296px 0;
 }
-
 .avon {
   width: 79px;
   background-position: -367px 0;
 }
-
 .tire {
   width: 64px;
   height: 27px;
   background-position: -455px;
 }
-
 .pirelli {
   width: 64px;
   background-position: -526px;
 }
-
 .dunlop {
   width: 75px;
   background-position: -602px;
@@ -582,11 +559,9 @@ footer {
 .ft_menu {
   text-align: center;
 }
-
 .ft_menu li {
   display: inline-block;
 }
-
 .ft_menu a {
   display: block;
   font: 12px Arial, Tahoma, sans-serif;
@@ -603,7 +578,6 @@ footer {
   margin: 0 11px 0 11px;
   border-left: 1px solid #fff;
 }
-
 .red {
   font: 10px Arial, Tahoma, sans-serif;
   text-align: center;
