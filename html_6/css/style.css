@@ -397,7 +397,7 @@ input[type="checkbox"] {
   padding-top: 6px;
 }
 
-/*legend {
+legend {
   display: flex;
   border: 1px solid #8b979c;
   border-radius: 20px;
@@ -406,12 +406,11 @@ input[type="checkbox"] {
   font-size: 13px;
   text-transform: uppercase;
   color: #4a6680;
-  margin-left: 23px;
   width: 129px;
   padding-top: 5px;
   padding-left: 7px;
   font-weight: normal;
-}*/
+}
 
 .button {
   width: 78px;
