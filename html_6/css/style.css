@@ -362,13 +362,18 @@ h2 {
   padding-left: 7px;
 }
 
+.h2_lft {
+  margin-left: 10px;
+}
+
 label {
   display: flex;
   font-size: 13px;
   color: #4a6680;
   text-align: center;
 }
-span {
+
+.pddg_tp {
   padding-top: 3px;
 }
 .tires_rgt {
@@ -398,7 +403,6 @@ input[type="checkbox"] {
 }
 
 legend {
-  display: flex;
   border: 1px solid #8b979c;
   border-radius: 20px;
   width: 144px;
@@ -410,6 +414,11 @@ legend {
   padding-top: 5px;
   padding-left: 7px;
   font-weight: normal;
+}
+
+.circle_flt_lft {
+  float: left;
+  margin-right: 5px;
 }
 
 .button {
@@ -444,7 +453,9 @@ figure {
 }
 
 .box {
-  display: block;
+  display: flex;
+  justify-content: center;
+  padding: 3px 0;
   width: 138px;
   height: 128px;
   background-color: #fff;
@@ -457,8 +468,7 @@ figure {
   text-align: center;
   font-size: 13px;
   text-decoration: none;
-  margin-top: 14px;
-  margin-bottom: 9px;
+  margin-top: 10px;
 }
 
 .black {
