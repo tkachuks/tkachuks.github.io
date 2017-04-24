@@ -1,0 +1,148 @@
+@media screen and (min-width:960px) {
+  .logo__menu{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4.3rem;
+  }
+  .menu {
+    box-sizing: border-box;
+    padding-top: 0.7rem;
+    height: 2.94rem;
+  }
+
+  .menu__item {
+    display: inline-block;
+    margin-left: 3rem;
+  }
+  .menu__link {
+    display: block;
+    font: 1.5rem 'League_Gothic', Arial, Tahoma, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .menu__link:hover {
+    border-bottom: 0.125rem solid #EDBFFF;
+  }
+  /*****slider*****/
+  .slider {
+    margin-top: 12.5rem;
+  }
+  .slider__wrap {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .slider__body{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 2%
+  }
+  .slider__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+  }
+  .slider_titleh2 {
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
+  .slider_titelh3 {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+  .slider__txt{
+    display: block;
+    width: 95%;
+    max-height: 6rem;
+  }
+  .img__iphone {
+    display: block;
+    width: 45%;
+  }
+  .iphone {
+    display: block;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: -1.3rem;
+  }
+  .checked {
+    padding-top: 6rem;
+    padding-bottom: 3.3rem;
+  }
+  .checked__list {
+    justify-content: flex-end;
+    padding-right: 20%;
+  }
+  /****about****/
+    .about {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about__content {
+    padding-left: 25%;
+  }
+  .about__item {
+    width: 31%;
+  }
+  .about__link {
+    margin-top: 5%;
+  }
+  /******content*******/
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .content__item {
+    margin: 0;
+    width: 45%;
+  }
+
+  .title__blk,
+  .title__pnk {
+    display: inline-block;
+  }
+
+  .content__art {
+    box-sizing: border-box;
+    padding: 10% 5% 5% 10%;
+    margin-left: 5%;
+  }
+
+  .checked--mod {
+      padding-top: 1.6rem;
+      padding-bottom: 3rem;
+  }
+
+  .checked__list--mod {
+    justify-content: center;
+    padding: 0;
+  }
+  /****brands*****/
+  .brands {
+    padding-top: 1.6rem;
+  }
+
+  .brands__list {
+    justify-content: space-between;
+    width: 85%;
+  }
+  .brands__item {
+    margin-bottom: 1.6rem;
+  }
+  /***catrgories****/
+  .categories {
+    justify-content: space-between;
+    padding: 10% 0;
+  }
+  .categories__item {
+    width: 30%;
+  }
+  /*****footer*****/
+  footer {
+    justify-content: space-between;
+    padding: 3rem 0;
+  }
+
+}

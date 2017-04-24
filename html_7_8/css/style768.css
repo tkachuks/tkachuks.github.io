@@ -1,0 +1,164 @@
+@media screen and (min-width:768px) and (max-width:959px) {
+  .logo__menu{
+    flex-direction: column;
+    padding-left: 1.25rem;
+  }
+
+  h1 {
+    padding-bottom: 0.5rem;
+  }
+
+  .menu {
+    box-sizing: border-box;
+    height: 1.94rem;
+  }
+
+  .menu__item {
+    display: inline-block;
+    margin-right: 3rem;
+  }
+  .menu__link {
+    display: block;
+    font: 1.5rem 'League_Gothic', Arial, Tahoma, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .menu__link:hover {
+    border-bottom: 0.125rem solid #EDBFFF;
+  }
+  /*slider*/
+  .slider {
+    margin-top: 4.5rem;
+  }
+  .slider__wrap {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .slider__body{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 2%
+  }
+  .slider__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+  }
+  .slider_titleh2 {
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
+  .slider_titelh3 {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+  .slider__txt{
+    display: block;
+    width: 75%;
+    max-height: 6rem;
+    overflow: hidden;
+  }
+  .img__iphone {
+    display: block;
+    width: 45%;
+  }
+  .iphone {
+    display: block;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: -1.3rem;
+  }
+  .checked {
+    padding-top: 3rem;
+    padding-bottom: 5.3rem;
+  }
+  .checked__list {
+    justify-content: flex-end;
+    padding-right: 20%;
+  }
+  /****about****/
+  .about {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+  .about__item {
+    width: 30%;
+  }
+
+  .about__content {
+    padding-left: 25%;
+    height: 10rem;
+    overflow: hidden;
+  }
+  .about__link {
+    margin-top: 2%;
+    margin-left: 73%;
+  }
+  /****content*****/
+  .content {
+    flex-direction: row;
+  }
+  .content__item {
+    width: 50%;
+  }
+  .content__art {
+    box-sizing: border-box;
+    padding: 10% 9% 5% 10%;
+    margin-left: 7%;
+  }
+  .content__txt {
+    height: 9rem;
+    overflow: hidden;
+  }
+  .checked--mod {
+      padding-top: 1.6rem;
+      padding-bottom: 3rem;
+  }
+  .checked__list--mod {
+    justify-content: center;
+    padding: 0;
+  }
+
+  /****brand******/
+  .brands {
+    padding-top: 1.6rem;
+  }
+
+  .brands__list {
+    justify-content: space-between;
+  }
+  .brands__item {
+    margin-bottom: 1.6rem;
+  }
+  /***catrgories****/
+  .categories {
+    justify-content: space-between;
+    padding: 10% 2%;
+  }
+  .categories__item {
+    width: 28%;
+  }
+  .categories__txt {
+    height: 11.3rem;
+    overflow: hidden;
+  }
+  /*****footer*****/
+  footer {
+    flex-direction: column;
+    padding: 3rem 1rem 4.3rem;
+  }
+
+  .footer__link {
+    font-size: 1.3rem;
+  }
+  .footer__txt {
+    margin-top: 4%;
+    margin-left: 80%;
+  }
+}

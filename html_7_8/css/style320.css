@@ -1,0 +1,158 @@
+@media screen and (min-width:320px) and (max-width:479px) {
+  .logo__menu {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.3rem;
+  }
+  /*menu__hidden*/
+  .menu {
+    display: flex;
+    margin-top: 23px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    }
+
+  .menu__list {
+    visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+  }
+
+  .menu__list:hover {
+    visibility: visible;
+    box-sizing: border-box;
+    width: 245px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: rgba(67, 54, 74, 0.9);
+    z-index: 2;
+  }
+
+  .menu__item:first-child>:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .menu__item:last-child>:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .menu__item {
+    border-top: 1px solid #523F5A;
+    border-bottom: 1px solid #36283E;
+  }
+
+  .menu__item:first-of-type {
+    border-top: none;
+  }
+
+  .menu__item:last-of-type {
+    border-bottom: none;
+  }
+
+  .menu__link {
+    display: block;
+    font: 24px 'League_Gothic', Arial, Tahoma, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 243px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .menu__link--initial {
+    visibility: visible;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #EDBFFF;
+    width: 50px;
+  }
+
+  .menu__link--initial:hover {
+    width: 243px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0;
+  }
+
+  .menu__link:hover {
+    background-color: rgba(67, 54, 74, 0.9);
+    padding-bottom: 8px;
+    border-bottom: 2px solid #EDBFFF;
+  }
+  /*****slider*****/
+  .slider {
+    padding-top: 6rem;
+  }
+
+  .checked {
+    padding-top: 4.6rem;
+    padding-bottom: 4rem;
+  }
+
+  /****about****/
+  .about__item {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .about__item:nth-child(2n) {
+    margin: 10% 6% 12%;
+  }
+  .about__content {
+    padding-left: 20%;
+    padding-right: 7%;
+    height: 6rem;
+    overflow: hidden;
+  }
+  .about__link {
+    margin-top: 6%;
+  }
+  /****content****/
+
+  .content__art {
+    box-sizing: border-box;
+    padding: 10% 9% 9% 16%;
+    margin-left: 7%;
+    max-height: 18rem;
+}
+
+.content__txt {
+  overflow: hidden;
+    height: 11rem;
+}
+
+  .autor {
+    position: absolute;
+  }
+  /*****brands*****/
+.brands__list {
+  justify-content: space-around;
+}
+.brands__item {
+  margin: 0px 10% 20% 12%;
+}
+/***categories****/
+.categories {
+  display: none;
+}
+
+/****footer****/
+footer {
+  padding-top: 2.5rem;
+  padding-bottom: 9.1rem;
+}
+
+.footer__list {
+  display: none;
+}
+
+
+
+
+}
