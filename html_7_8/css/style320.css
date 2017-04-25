@@ -87,7 +87,7 @@
     border-bottom: 2px solid #EDBFFF;
   }
   /*****slider*****/
-  .slider {
+  .wrapper__slider {
     padding-top: 6rem;
   }
 
@@ -105,10 +105,12 @@
     margin: 10% 6% 12%;
   }
   .about__content {
-    padding-left: 20%;
+    padding-left: 3.56rem;
     padding-right: 7%;
-    height: 6rem;
+  }
+  .about__txt {
     overflow: hidden;
+    height: 4.1rem;
   }
   .about__link {
     margin-top: 6%;
@@ -135,7 +137,7 @@
   justify-content: space-around;
 }
 .brands__item {
-  margin: 0px 10% 20% 12%;
+  width: 50%;
 }
 /***categories****/
 .categories {

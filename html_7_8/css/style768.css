@@ -28,11 +28,9 @@
     border-bottom: 0.125rem solid #EDBFFF;
   }
   /*slider*/
-  .slider {
+  .wrapper__slider {
     margin-top: 4.5rem;
-  }
-  .slider__wrap {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, .2);
   }
 
   .slider__body{
@@ -73,6 +71,7 @@
     margin-top: -1.3rem;
   }
   .checked {
+    justify-content: flex-end;
     padding-top: 3rem;
     padding-bottom: 5.3rem;
   }
@@ -88,17 +87,30 @@
     padding-right: 1.1rem;
   }
   .about__item {
-    width: 30%;
+    width: 33%;
+  }
+  .wrench {
+    background: url(../img/wrench.png) 0.5rem 0.4rem no-repeat;
+  }
+  .comment {
+    background: url(../img/comment.png) 0.5rem 0.4rem no-repeat;
+  }
+  .music {
+    background: url(../img/music.png) 0.5rem 0.4rem no-repeat;
   }
 
   .about__content {
-    padding-left: 25%;
-    height: 10rem;
-    overflow: hidden;
+    padding-left: 3rem;
   }
+
+  .about__txt {
+    overflow: hidden;
+    height: 8.2rem;
+  }
+
   .about__link {
     margin-top: 2%;
-    margin-left: 73%;
+    margin-left: 60%;
   }
   /****content*****/
   .content {

@@ -87,12 +87,11 @@
     border-bottom: 2px solid #EDBFFF;
   }
     /****slider*****/
-    .slider {
+    .wrapper__slider {
       margin-top: 4.5rem;
-    }
-    .slider__wrap {
       background-color: rgba(0, 0, 0, .2);
     }
+    
     .shadow {
       background-color: rgba(0, 0, 0, .2);
     }
@@ -132,13 +131,11 @@
       margin: 10% 3% 10%;
     }
     .about__content {
-      padding-left: 15%;
-      height: 6rem;
-      overflow: hidden;
+      padding-left: 4rem;
     }
     .about__link {
       margin-top: 2%;
-      margin-left: 88%;
+      margin-left: 82%;
     }
     /*****content*****/
     .content__art {
@@ -166,7 +163,7 @@
       justify-content: space-around;
     }
     .brands__item {
-      margin: 0 7% 11% 7%;
+      width: 33%;
     }
     /***catrgories****/
     .categories {
