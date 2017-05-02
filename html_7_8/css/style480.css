@@ -91,7 +91,7 @@
       margin-top: 4.5rem;
       background-color: rgba(0, 0, 0, .2);
     }
-    
+
     .shadow {
       background-color: rgba(0, 0, 0, .2);
     }
@@ -151,6 +151,7 @@
       left: 2%;
     }
     .checked--mod {
+      justify-content: center;
       padding-top: 1.6rem;
       padding-bottom: 3rem;
     }
@@ -168,7 +169,7 @@
     /***catrgories****/
     .categories {
       flex-direction: column;
-      padding: 18% 5%;
+      padding: 3.5rem 1.5rem;
     }
     .categories__item:nth-child(2n) {
       margin: 3rem 0;

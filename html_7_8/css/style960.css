@@ -111,8 +111,9 @@
   }
 
   .checked--mod {
-      padding-top: 1.6rem;
-      padding-bottom: 3rem;
+    justify-content: center;
+    padding-top: 1.6rem;
+    padding-bottom: 3rem;
   }
 
   .checked__list--mod {
@@ -134,7 +135,7 @@
   /***catrgories****/
   .categories {
     justify-content: space-between;
-    padding: 10% 0;
+    padding: 5.5rem 0;
   }
   .categories__item {
     width: 30%;

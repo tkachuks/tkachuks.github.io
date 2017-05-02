@@ -239,6 +239,10 @@ h1 {
   color: #454545;
 }
 
+.checked--mod {
+  justify-content: center;
+}
+
 .uptates__title {
   font: 1.8rem 'League_Gothic', Arial, Tahoma, sans-serif;
   color: #454545;
@@ -339,7 +343,7 @@ background: url(../img/sprite_brands.png) -278px;
 }
 .vonzipper {
 width: 4.35rem;
-height: 4rem;
+height: 4.05rem;
 background: url(../img/sprite_brands.png) -391px;
 }
 /*categories*/
@@ -385,7 +389,7 @@ footer {
 
 .footer__item {
   display: inline-block;
-  margin-right: 2rem;
+  margin-right: 1.9rem;
 }
 
 .footer__item:last-child {
