@@ -1,0 +1,24 @@
+table {
+  margin: 50px auto;
+}
+
+table tr td {
+  padding: 40px;
+  border: 10px solid #000;
+}
+
+.red {
+  background: #FF5A20;
+}
+
+.black {
+  background: #000;
+}
+
+.yellow {
+  background: #FFE741;
+}
+
+.blue {
+  background: #044789;
+}
