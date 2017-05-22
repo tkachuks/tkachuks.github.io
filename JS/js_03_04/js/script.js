@@ -1,12 +1,6 @@
 (function() {
   'use strict';
 
-  var root = document.getElementById('root');
-  console.log(root);
-  var form = document.createElement('form');
-  form.classList.add('form');
-  root.appendChild(form);
-
 var test = {
   data: {
     title: 'Тест по какой-то теме',
@@ -25,58 +19,54 @@ var test = {
       }
     ]
   },
+  formCreate: function () {
+    var root = document.getElementById('root');
+    var form = document.createElement('form');
+    form.classList.add('form');
+    root.appendChild(form);
+    return;
+  },
+
   listData: function () {
     for (var i = 0, max = this.data.questions.length; i < max; i++) {
       console.log(this.data.questions[i]);
     }
   },
-  crateQuestion: function () {
-    for (var i = 0, max = this.data.questions.length; i < max; i++) {
-      var question = document.createElement('h4');
-      question.appendChild(document.createTextNode(this.data.questions[i].title));
-      form.appendChild(question);
+
+  createQuestions: function (obj) {
+    var div = document.createElement('div');
+    var question = document.createElement('h4');
+    question.appendChild(document.createTextNode(obj.title));
+    div.appendChild(question);
+
+    for (var i = 0, max = obj.answers.length; i < max; i++) {
+      var label = document.createElement('label');
+      var check = document.createElement('input');
+      check.setAttribute('type', 'checkbox');
+      label.appendChild(check);
+      label.appendChild(document.createTextNode(obj.answers[i]));
+      div.appendChild(label);
     }
+    // var form = document.querySelector('.form');
+    // form.appendChild(div);
+    return;
   },
-  createLabel: function () {
-      for (var i = 0; i < this.data.questions[0].answers.length; i++) {
-        var label = document.createElement('label');
-        var check = document.createElement('input');
-        check.setAttribute('type', 'checkbox');
-        label.appendChild(check);
-        label.appendChild(document.createTextNode(this.data.questions[0].answers[i]));
-        form.insertBefore(label, form.children[1]);
-      }
-  },
-  createLabel1: function () {
-      for (var i = 0; i < this.data.questions[1].answers.length; i++) {
-        var label = document.createElement('label');
-        var check = document.createElement('input');
-        check.setAttribute('type', 'checkbox');
-        label.appendChild(check);
-        label.appendChild(document.createTextNode(this.data.questions[1].answers[i]));
-        form.insertBefore(label, form.children[5]);
-      }
-  },
-  createLabel2: function () {
-      for (var i = 0; i < this.data.questions[2].answers.length; i++) {
-        var label = document.createElement('label');
-        var check = document.createElement('input');
-        check.setAttribute('type', 'checkbox');
-        label.appendChild(check);
-        label.appendChild(document.createTextNode(this.data.questions[2].answers[i]));
-        form.insertBefore(label, form.children[10]);
-      }
+  createTest: function () {
+    for(var i = 0; i < this.data.questions.length; i++) {
+	  var questions = this.createQuestions(this.data.questions[i]);
+    var form = document.querySelector('.form');
+    form.appendChild(questions);
+   }
+     return;
   }
 
 };
 
+test.formCreate();
 test.listData();
-test.crateQuestion();
-console.log(root);
-test.createLabel();
-console.log(root);
-test.createLabel1();
-test.createLabel2();
+// test.createQuestions(test.data.questions[0]);
+test.createTest();
+
 
 
 
