@@ -19,13 +19,6 @@ var test = {
       }
     ]
   },
-  formCreate: function () {
-    var root = document.getElementById('root');
-    var form = document.createElement('form');
-    form.classList.add('form');
-    root.appendChild(form);
-    return;
-  },
 
   listData: function () {
     for (var i = 0, max = this.data.questions.length; i < max; i++) {
@@ -51,23 +44,24 @@ var test = {
     // form.appendChild(div);
     return;
   },
-  createTest: function () {
+  formCreate: function () {
+    var root = document.getElementById('root');
+    var form = document.createElement('form');
+    form.classList.add('form');
+    root.appendChild(form);
+
     for(var i = 0; i < this.data.questions.length; i++) {
 	  var questions = this.createQuestions(this.data.questions[i]);
-    var form = document.querySelector('.form');
-    form.appendChild(questions);
-   }
-     return;
+    form.insertBefore(questions, null);
   }
+    return;
+ }
 
 };
 
-test.formCreate();
 test.listData();
 // test.createQuestions(test.data.questions[0]);
-test.createTest();
-
-
-
+// test.createTest();
+test.formCreate();
 
 })();
