@@ -1,3 +1,22 @@
+
 label {
   display: block;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.boxQuestion {
+  width: 25%;
+}
+
+.btn {
+  display: block;
+  background-color: #CFE2F3;
+  border: 0.2rem solid #000;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  margin: 2rem auto;
 }
