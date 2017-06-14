@@ -47,8 +47,6 @@ function timerOn() {
     startTime = Date.now();
   }
   interval = setInterval(function () {
-    // deltaTime = Date.now() - startTime;
-    // console.log(deltaTime);
     deltaTime = timeFormat();
     timeField.innerHTML = deltaTime;
   }, 1);
