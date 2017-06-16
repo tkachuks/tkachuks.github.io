@@ -14,50 +14,69 @@ timer.appendChild(btnStart);
 timer.appendChild(btnReset);
 root.appendChild(timer);
 
-var startTime;
-var deltaTime;
-var interval;
-var time = 0;
-var isActive = false;
 
-function startPause() {
-  if (isActive) {
-    isActive = false;
-    btnStart.innerHTML = 'Resume';
-    clearInterval(interval);
-  } else {
-    isActive = true;
-    btnStart.innerHTML = 'Pause';
-    timerOn();
+  var watch = new Watch(timer, btnStart, btnReset);
 
-  }
-};
+  function Watch(timer, btnStart, btnReset) {
+    var time = 0;
+    var interval;
+    var offset;
+    var isOn = false;
 
-function reset() {
-  clearInterval(interval);
-  isActive = false;
-  time = 0;
-  btnStart.innerHTML = 'Start';
-  timeField.innerHTML = '00:00:000';
-  startTime = null;
-};
+    btnStart.addEventListener('click', function () {
+      (isOn) ? pause() : start();
+    });
 
-function timerOn() {
-  if (!startTime) {
-    startTime = Date.now();
-  }
-  interval = setInterval(function () {
-    deltaTime = timeFormat();
-    timeField.innerHTML = deltaTime;
-  }, 1);
+    btnReset.addEventListener('click', function () {
+      reset();
+    });
 
-};
+    function start() {
+      if (!isOn) {
+        interval = setInterval(function () {
+          time += timePassed();
+          timeField.textContent = timeFormatter(time);
+        }.bind(this), 1);
+        btnStart.textContent = 'Pause';
+        offset = Date.now();
+        isOn = true;
+      } else {
+        this.pause();
+      }
+    }
 
-function timeFormat () {
-  var time = new Date(Date.now() - startTime);;
-  var minutes = time.getMinutes().toString();
-  var seconds = time.getSeconds().toString();
-  var milliseconds = time.getMilliseconds().toString();
+    function pause() {
+      if (isOn) {
+        clearInterval(interval);
+        interval = null;
+        btnStart.textContent = 'Start';
+        isOn = false;
+      }
+    }
+
+    function reset() {
+      if (!isOn) {
+        time = 0;
+        timeField.textContent = timeFormatter(time);
+      } else {
+        pause();
+        reset();
+        btnStart.textContent = 'Start';
+      }
+    }
+
+    function timePassed() {
+      var now = Date.now();
+      var timePassed = now - offset;
+      offset = now;
+      return timePassed;
+    }
+
+    function timeFormatter(timeInMilliseconds) {
+      var time = new Date(timeInMilliseconds);
+      var minutes = time.getMinutes().toString();
+      var seconds = time.getSeconds().toString();
+      var milliseconds = time.getMilliseconds().toString();
 
       if (minutes.length < 2) {
         minutes = '0' + minutes;
@@ -69,9 +88,7 @@ function timeFormat () {
         milliseconds = '0' + milliseconds;
       }
       return minutes + ':' + seconds + ':' + milliseconds;
-};
-
-btnStart.addEventListener('click', startPause);
-btnReset.addEventListener('click', reset);
+    }
+  }
 
 })();
