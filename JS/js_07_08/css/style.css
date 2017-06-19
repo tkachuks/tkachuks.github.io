@@ -1,0 +1,90 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  margin: 4rem auto;
+  width: 50%;
+  height: 350px;
+}
+
+.tab_list {
+  display: flex;
+}
+
+.tab_link {
+  display: block;
+  text-decoration: none;
+  color: #666;
+  height: 1.5rem;
+  width: 4.5rem;
+  text-align: center;
+  line-height: 1.5rem
+
+}
+
+.content {
+  padding: 0.5rem 1rem;
+  border: 0.01rem solid #999;
+  display: none;
+}
+
+.content:first-child {
+  display: block;
+}
+
+.active {
+  background-color: #3DD6DE;
+  color: #fff;
+}
+
+p {
+  color: #666;
+}
+
+h3 {
+  padding: 0.5rem;
+}
+
+form {
+  margin: 4rem auto;
+  width: 60%;
+  -webkit-box-shadow: -1px -1px 21px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px -1px 21px 3px rgba(0,0,0,0.75);
+  box-shadow: -1px -1px 21px 3px rgba(0,0,0,0.75);
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0 1.5rem 1rem
+}
+
+.private {
+  margin: 0.5rem 0;
+  border: none;
+  background-color: #90DEC5;
+  height: 1.8rem;
+  width: 45%;
+  line-height: 1.8rem;
+  text-indent: 1rem;
+}
+
+[type="button"] {
+  margin: 0 0 0.5rem 0.5rem;
+}
+
+span {
+  display: none;
+  padding: 0.2rem 0.2rem;
+  line-height: 1.8rem;
+  color: #111;
+  margin-left: 10px;
+  border: 0.01rem solid #999;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.75);
+
+}
