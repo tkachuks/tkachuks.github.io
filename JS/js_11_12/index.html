@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS 11_12</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="js/handlebars-v4.0.10.js"> -->
+
+    <!-- </script> -->
+  </head>
+  <body>
+    <div class="wrap_carousel">
+      <div class="carousel-arrow-left"><span>Влево</span></div>
+      <div class="carousel-hider">
+        <ul class="carousel-list">
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img1" />
+              <p>lorem1</p>
+          </li>
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img2"/>
+              <p>lorem2</p>
+          </li>
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img3"/>
+              <p>lorem3</p>
+          </li>
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img4"/>
+              <p>lorem4</p>
+          </li>
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img5"/>
+              <p>lorem5</p>
+          </li>
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img6"/>
+              <p>lorem6</p>
+          </li>
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img7"/>
+              <p>lorem7</p>
+          </li>
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img8"/>
+              <p>lorem8</p>
+          </li>
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img9"/>
+              <p>lorem9</p>
+          </li>
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img10"/>
+              <p>lorem10</p>
+          </li>
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img11"/>
+              <p>lorem11</p>
+          </li>
+          <li class="carousel-element"><img src="http://lorempixel.com/400/200" alt="img12"/>
+              <p>lorem12</p>
+          </li>
+        </ul>
+      </div>
+      <div class="carousel-arrow-right"><span>Вправо</span></div>
+    </div>
+    <div id="user"></div>
+    <script id="userCard" type="text/template">
+      {{#users}}
+      <div class="card">
+        <img class="user_foto" src="{{img}}" height="150" alt="user foto">
+        <div class="card_info">
+          <p class="title">User Card</p>
+          <p class="text">Name:&nbsp;<span class="name">{{name}}</span></p>
+          <p class="mail text">E-mail:&nbsp;<span>{{email}}</span></p>
+          <p class="tel text">Telephone:&nbsp;<span>{{tel}}</span></p>
+          <p class="date text">Date of registration:&nbsp;<span>{{date}}</span></p>
+        </div>
+      </div>
+        {{/users}}
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+      <script src="js/templ.js">
+
+      </script>
+      <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
