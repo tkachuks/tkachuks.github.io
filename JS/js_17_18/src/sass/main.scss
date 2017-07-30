@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  padding-top: 4.5rem;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  padding-top: 1rem;
+
+  &_titel {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  &_list {
+    margin-top: 0;
+  }
+
+  &_item {
+    list-style: none;
+    margin-top: 1rem;
+  }
+
+  &_link {
+    text-decoration: none;
+    font: 1.3rem Arial sans-serif;
+    color: #000;
+    &:hover {
+      text-decoration: underline;
+      position: relative;
+      left: 0.3rem;
+    }
+  }
+}
+.articles {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-basis: 75%;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0.5rem;
+
+  &__item {
+    flex: 1 0 30%;
+  }
+}
