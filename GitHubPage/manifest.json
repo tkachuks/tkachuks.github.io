@@ -1,7 +1,7 @@
 {
   "name": "Atzmaim",
   "short_name": "Atzmaim",
-  "start_url": "./",
+  "start_url": "https://tkachuks.github.io/GitHubPage/",
   "description": "Smart Calendar",
   "display": "standalone",
   "orientation": "portrait",
