@@ -1,12 +1,16 @@
 {
   "name": "Atzmaim",
   "short_name": "Atzmaim",
-  "homepage_url": "https://tkachuks.github.io/GitHubPage/",
   "start_url": "./",
   "scope": ".",
   "description": "Smart Calendar",
   "display": "standalone",
   "orientation": "portrait",
+  "serviceworker": {
+    "src": "sw.js",
+    "scope": ".",
+    "update_via_cache": "none"
+  },
   "background_color": "#fff",
   "theme_color": "#5e36b1",
   "icons": [{
