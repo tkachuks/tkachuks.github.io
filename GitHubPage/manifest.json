@@ -1,0 +1,14 @@
+{
+  "name": "Atzmaim",
+  "short_name": "Atzmaim",
+  "start_url": "./",
+  "description": "Smart Calendar",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff",
+  "theme_color": "#5e36b1",
+  "icons": [{
+    "src": "./dist/media/ic_logo.png",
+    "sizes": "46x46"
+  }]
+}
