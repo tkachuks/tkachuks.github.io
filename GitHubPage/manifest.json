@@ -10,7 +10,7 @@
   "theme_color": "#5e36b1",
   "icons": [
     {
-      "src": "/android-chrome-144x144.png",
+      "src": "https://tkachuks.github.io/GitHubPage/android-chrome-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     }
