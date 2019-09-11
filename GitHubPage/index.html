@@ -8,49 +8,21 @@
 				<link rel="manifest" href="https://tkachuks.github.io/GitHubPage/manifest.json">
         <link href="./dist/swiper.min.css" rel="stylesheet"/>
         <link href="./dist/fullcalendar.min.css" rel="stylesheet"/>
-        <!-- <link rel="stylesheet" href="./public/style.css"> -->
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
     <link href="main.bundle.min.css" rel="stylesheet"></head>
     <body>
-        <!-- <script src="./public/main.js"></script> -->
         <script src='./components-lib/lib/moment.min.js'></script>
         <script src='./dist/jquery.min.js'></script>
         <script src='./dist/swiper.jquery.min.js'></script>
         <script src="./config.js" charset="utf-8"></script>
         <script src='./dist/fullcalendar.min.js'></script>
-        <!-- <script src='./sw.js'></script> -->
         <script src='./dist/hammer.min.js'></script>
         <script>
-
-	// window.addEventListener('load', () => {
-	// 	navigator.serviceWorker.register('https://tkachuks.github.io/GitHubPage/public/sw1.js')
-	// 	// navigator.serviceWorker.ready always resolve
-	// 	navigator.serviceWorker.ready.then(registration => {
-	// 		console.log('Service worker successfully registered on scope', registration.scope)
-	// 	})
-	// })
-  //
-	// // Code to handle install prompt on desktop
-	// let deferredPrompt
-	// const callPrompt = document.body
-	// // user is not yet using desktop version -> prompt
-	// if (!window.matchMedia('(display-mode: standalone)').matches) {
-	// 	window.addEventListener('beforeinstallprompt', e => {
-	// 		e.preventDefault()
-	// 		deferredPrompt = e
-	// 		callPrompt.addEventListener('click', e => {
-	// 			deferredPrompt.prompt()
-	// 			// Wait for the user to respond to the prompt
-	// 			deferredPrompt.userChoice.then(choiceResult => {
-	// 				if (choiceResult.outcome === 'accepted') {
-	// 					console.log('User accepted the A2HS prompt')
-	// 				} else {
-	// 					console.log('User dismissed the A2HS prompt')
-	// 				}
-	// 				deferredPrompt = null; e = null;
-	// 			})
-	// 		})
-	// 	})
-	// }
             (function(factory) {
 	    if (typeof define === 'function' && define.amd) {
 	        define(['jquery', 'hammerjs'], factory);

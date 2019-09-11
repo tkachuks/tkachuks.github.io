@@ -1,1 +1,1 @@
-console.log('file ws.js')
+console.log('add icon on desktop')
