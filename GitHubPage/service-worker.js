@@ -1,1 +1,2 @@
-console.log('add icon on desktop')
+console.log('service-worker.js')
+
