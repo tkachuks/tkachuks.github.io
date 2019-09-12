@@ -1,5 +1,5 @@
 console.log('service-worker.js')
-export const installModal = () => {
+const installModal = () => {
   const later = () => {
     console.log('install later')
     $('.installModal').remove()
