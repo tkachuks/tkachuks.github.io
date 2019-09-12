@@ -2944,6 +2944,80 @@ body {
   width: 25px;
 }
 
+#modal-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0,0,0,0.467);
+}
+#modal-background .confirm-block {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#modal-background .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.8rem 1.5rem 2.5rem;
+  margin: 0;
+  background-color: var(--main-bgcolor);
+}
+#modal-background .modal-body .icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+#modal-background .modal-body .text {
+  margin-top: 0.8rem;
+  font-size: 16px;
+  line-height: 1.56;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+}
+#modal-background .modal-footer {
+  display: flex;
+  background-color: #fff;
+}
+#modal-background .modal-footer button {
+  background-color: transparent;
+  border: none;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.75rem;
+}
+#modal-background .modal-footer button img {
+  -webkit-margin-start: 5px;
+  -moz-margin-start: 5px;
+  margin-inline-start: 5px;
+}
+#modal-background .modal-footer .no-btn {
+  color: var(--dark-color);
+  font-size: 14px;
+  padding: 0;
+}
+#modal-background .modal-footer .no-btn .cancel-img {
+  transform: rotate(45deg);
+}
+#modal-background .modal-footer .yes-btn {
+  color: var(--active-color);
+  font-size: 14px;
+  padding: 0;
+}
+.hiddenInstall {
+  display: none !important;
+}
+
 #header {
   width: 100%;
   position: fixed;
