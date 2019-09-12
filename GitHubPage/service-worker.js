@@ -30,5 +30,5 @@ const installModal = () => {
   $('.no-btn').on('click', later)
   $('.yes-btn').on('click', install)
 }
-console.log(window)
+installModal()
 // window.addEventListener('beforeinstallprompt', (e) => console.log('e', e))

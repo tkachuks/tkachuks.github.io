@@ -36,6 +36,7 @@
           } else {
             console.log('service worker is not supported');
           }
+          window.addEventListener('beforeinstallprompt', (e) => console.log('e', e))
         </script>
         <script>
             (function(factory) {
