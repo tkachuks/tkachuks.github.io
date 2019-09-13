@@ -36,11 +36,14 @@
           } else {
             console.log('service worker is not supported');
           }
+          const callPrompt = document.body
+          console.log(callPrompt)
           window.addEventListener('beforeinstallprompt', e => {
-            const callPrompt = document.body
-            console.log(callPrompt)
             deferredPrompt = e
-            deferredPrompt.prompt()
+            callPrompt.addEventListener('click', e => {
+              console.log('click')
+              deferredPrompt.prompt()
+            })
           })
         </script>
         <script src="./install.js" defer></script>
@@ -80,7 +83,6 @@
 				</script>
 				<div id='app'>
           <div id='calendar'></div>
-          <button class="add-button1">Add to home screen</button>
 				</div>
     <script type="text/javascript" src="main.bundle.min.js"></script></body>
 </html>
