@@ -27,27 +27,6 @@
             window.addEventListener('load', function() {
               navigator.serviceWorker.register('https://tkachuks.github.io/GitHubPage/service-worker.js').then(function(registration) {
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                const installModal = $('.installModal')
-                let deferredPrompt
-                window.addEventListener('beforeinstallprompt', e => {
-                  e.preventDefault()
-                  deferredPrompt = e
-                  $('.installModal').removeClass('hiddenInstall')
-                  const confirmBtn = $('#confirm-btn')
-                  console.log(confirmBtn)
-                  confirmBtn.addEventListener('click', e => {
-                    $('.installModal').addClass('hiddenInstall')
-                    deferredPrompt.prompt()
-                    deferredPrompt.userChoice.then(choiceResult => {
-                      if (choiceResult.outcome === 'accepted') {
-                        console.log('User accepted the A2HS prompt')
-                      } else {
-                        console.log('User dismissed the A2HS prompt')
-                      }
-                      deferredPrompt = null
-                    })
-                  })
-                })
               }, function(err) {
                 console.log('ServiceWorker registration failed: ', err);
               }).catch(function(err) {
@@ -57,6 +36,34 @@
           } else {
             console.log('service worker is not supported');
           }
+          let deferredPrompt;
+          const addBtn = document.querySelector('.add-button');
+          addBtn.style.display = 'none';
+
+          window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent Chrome 67 and earlier from automatically showing the prompt
+            e.preventDefault();
+            // Stash the event so it can be triggered later.
+            deferredPrompt = e;
+            // Update UI to notify the user they can add to home screen
+            addBtn.style.display = 'block';
+
+            addBtn.addEventListener('click', (e) => {
+              // hide our user interface that shows our A2HS button
+              addBtn.style.display = 'none';
+              // Show the prompt
+              deferredPrompt.prompt();
+              // Wait for the user to respond to the prompt
+              deferredPrompt.userChoice.then((choiceResult) => {
+                  if (choiceResult.outcome === 'accepted') {
+                    console.log('User accepted the A2HS prompt');
+                  } else {
+                    console.log('User dismissed the A2HS prompt');
+                  }
+                  deferredPrompt = null;
+                });
+            });
+          });
           // $(document).ready(() => {
           //   console.log($)
           //   const installModal = $('.installModal')
@@ -121,7 +128,8 @@
 	}));
 				</script>
 				<div id='app'>
-					<div id='calendar'></div>
+          <div id='calendar'></div>
+          <button class="add-button1">Add to home screen</button>
 				</div>
     <script type="text/javascript" src="main.bundle.min.js"></script></body>
 </html>
