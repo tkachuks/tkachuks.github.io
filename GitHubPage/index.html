@@ -36,10 +36,11 @@
           } else {
             console.log('service worker is not supported');
           }
+          let deferredPrompt
           window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
-            showInstallPromotion();
+            console.log('beforeinstallprompt loaded')
           })
         </script>
         <script src="./install.js" defer></script>
