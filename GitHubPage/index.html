@@ -36,14 +36,9 @@
           } else {
             console.log('service worker is not supported');
           }
-          const callPrompt = document.body
-          console.log(callPrompt)
           window.addEventListener('beforeinstallprompt', e => {
-            deferredPrompt = e
-            callPrompt.addEventListener('click', e => {
+            deferredPrompt = deferredPrompt
               console.log('click')
-              deferredPrompt.prompt()
-            })
           })
         </script>
         <script src="./install.js" defer></script>
