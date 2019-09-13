@@ -37,18 +37,19 @@
             console.log('service worker is not supported');
           }
           $(document).ready(() => {
+            console.log($)
             const installModal = $('.installModal')
-            installModal.addClass("hiddenInstall")
+            $('.installModal').addClass("hiddenInstall")
             console.log('installModal', installModal)
             let deferredPrompt
             window.addEventListener('beforeinstallprompt', (e) => {
               e.preventDefault()
               deferredPrompt = e
-              installModal.removeClass("hiddenInstall")
-              const confirmBtn = document.getElementById('confirm-btn')
+              $('.installModal').removeClass("hiddenInstall")
+              const confirmBtn = $('#confirm-btn')
               console.log(confirmBtn)
               confirmBtn.addEventListener('click', (e) => {
-                installModal.addClass("hiddenInstall")
+                $('.installModal').addClass("hiddenInstall")
                 deferredPrompt.prompt();
                 deferredPrompt.userChoice.then((choiceResult) => {
                     if (choiceResult.outcome === 'accepted') {
