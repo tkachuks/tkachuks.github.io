@@ -420,6 +420,11 @@ const config = {
       meeting: 'meeting',
       vacation: 'vacation'
     },
+    install_modal: {
+      add_to_home_screen: 'Add to Home Screen',
+      confirm_label: 'add now',
+      later_label: 'add later'
+    },
     empty_agenda: 'There are no queues on this day. Click the button to add a queue',
     order_queue: 'Order a queue',
     noEvents: 'No events to display',
