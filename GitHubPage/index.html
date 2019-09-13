@@ -8,10 +8,10 @@
 				<link rel="manifest" href="https://tkachuks.github.io/GitHubPage/manifest.json">
         <link href="./dist/swiper.min.css" rel="stylesheet"/>
         <link href="./dist/fullcalendar.min.css" rel="stylesheet"/>
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://tkachuks.github.io/GitHubPage/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://tkachuks.github.io/GitHubPage/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://tkachuks.github.io/GitHubPage/favicon-16x16.png">
+        <link rel="mask-icon" href="https://tkachuks.github.io/GitHubPage/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
     <link href="main.bundle.min.css" rel="stylesheet"></head>
@@ -36,10 +36,27 @@
           } else {
             console.log('service worker is not supported');
           }
-
+          const installModal = document.querySelector('.installModal')
+          console.log(installModal)
           let deferredPrompt
           window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault()
             deferredPrompt = e
+            installModal.classList.remove("hiddenInstall")
+            const confirmBtn = document.getElementById('confirm-btn')
+            console.log(confirmBtn)
+            confirmBtn.addEventListener('click', (e) => {
+              installModal.classList.add("hiddenInstall")
+              deferredPrompt.prompt();
+              deferredPrompt.userChoice.then((choiceResult) => {
+                  if (choiceResult.outcome === 'accepted') {
+                    console.log('User accepted the A2HS prompt');
+                  } else {
+                    console.log('User dismissed the A2HS prompt');
+                  }
+                  deferredPrompt = null;
+                });
+            });
           })
         </script>
         <script>
