@@ -41,6 +41,7 @@
             const installModal = $('.installModal')
             $('.installModal').addClass("hiddenInstall")
             console.log('installModal', installModal)
+            console.log('document', document.querySelector('.installModal'))
             let deferredPrompt
             window.addEventListener('beforeinstallprompt', (e) => {
               e.preventDefault()
