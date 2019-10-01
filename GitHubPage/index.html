@@ -23,19 +23,19 @@
         <script src='./dist/fullcalendar.min.js'></script>
         <script src='./dist/hammer.min.js'></script>
         <script>
-          if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-              navigator.serviceWorker.register('https://tkachuks.github.io/GitHubPage/service-worker.js').then(function(registration) {
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-              }, function(err) {
-                console.log('ServiceWorker registration failed: ', err);
-              }).catch(function(err) {
-                console.log(err)
-              });
-            });
-          } else {
-            console.log('service worker is not supported');
-          }
+          // if ('serviceWorker' in navigator) {
+          //   window.addEventListener('load', function() {
+          //     navigator.serviceWorker.register('https://tkachuks.github.io/GitHubPage/service-worker.js').then(function(registration) {
+          //       console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          //     }, function(err) {
+          //       console.log('ServiceWorker registration failed: ', err);
+          //     }).catch(function(err) {
+          //       console.log(err)
+          //     });
+          //   });
+          // } else {
+          //   console.log('service worker is not supported');
+          // }
           let deferredPrompt
           window.addEventListener('beforeinstallprompt', e => {
             console.log('beforeinstallprompt')
@@ -89,8 +89,9 @@
 	            });
 	        };
 	    })(Hammer.Manager.prototype.emit);
-	}));
-				</script>
+  }));
+  </script>
+  <script src="./app.js"></script>
 				<div id='app'>
           <div id='calendar'></div>
 				</div>
