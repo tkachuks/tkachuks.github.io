@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <base href='/'>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Filling up</title>
+    <link href="https://tkachuks.github.io/public/filling-up/main.bundle.min.css" rel="stylesheet"/>
   </head>
   <body>
-    <div>
-      <span>asdfasdfasdf asdfasdf<span>
-    </div>
+    <script>
+      window.fbAsyncInit = function () {
+          FB.init({
+            appId: 1923449871239766,
+            cookie: true,
+            oauth: true,
+            version: 'v2.10'
+          });
+        };
 
+        (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) { return; }
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src='./FBReg/components-lib/lib/react.production.min.js'></script>
+    <script src='./FBReg/components-lib/lib/react-dom.production.min.js'></script>
+    <script src='./FBReg/components-lib/lib/react-router-dom.min.js'></script>
+    <script src='./FBReg/components-lib/lib/prop-types.min.js'></script>
+    <script src='./FBReg/components-lib/lib/moment.min.js'></script>
+    <script src='./FBReg/components-lib/reactComboDatePicker.min.js'></script>
+    <script src='./FBReg/config.js'></script>
+    <div id='root'></div>
+    <!-- <script src="./dist/main.bundle.js"></script> -->
+    <!-- <script type="text/javascript" src="/dist/reactComboDatePicker.min.js"></script> -->
+    <script type="text/javascript" src="https://tkachuks.github.io/public/filling-up/main.bundle.min.js"></script>
   </body>
 </html>
