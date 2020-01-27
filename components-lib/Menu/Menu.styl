@@ -7,6 +7,7 @@
     z-index 9999
     width 100%
     height 100vh
+    height calc(var(--vh, 1vh) * 100)
     overflow auto
     background-color rgba(255, 255, 255, 0.88)
   .menu_container
@@ -26,7 +27,7 @@
     height 100%
   .menu
     .menu-logo
-      background-color red
+      background-color rgba(79, 45, 167, 0.7)
       display flex
       flex-direction column
       justify-content center
@@ -68,7 +69,7 @@
     display flex
     flex-direction column
     flex-grow 1
-    background-color red
+    background-color rgba(79, 45, 167, 0.7)
   .list-item
     min-height 4rem
     -moz-padding-start 1.4rem
