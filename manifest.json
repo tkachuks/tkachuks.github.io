@@ -2,7 +2,7 @@
   "name": "Atzmaim",
   "short_name": "Atzmaim",
   "start_url": "./",
-  "scope": ".",
+  "scope": "https://tkachuks.github.io/",
   "description": "Smart Calendar",
   "display": "standalone",
   "orientation": "portrait",
