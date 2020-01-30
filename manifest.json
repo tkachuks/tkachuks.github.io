@@ -2,7 +2,7 @@
   "name": "Atzmaim",
   "short_name": "Atzmaim",
   "start_url": "./",
-  "scope": "./SW/",
+  "scope": ".",
   "description": "Smart Calendar",
   "display": "standalone",
   "orientation": "portrait",
