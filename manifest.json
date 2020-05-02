@@ -4,7 +4,7 @@
   "start_url": "./",
   "scope": ".",
   "description": "Smart Calendar",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait",
   "background_color": "#fff",
   "theme_color": "#5e36b1",
