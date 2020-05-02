@@ -1,7 +1,7 @@
 {
   "name": "Atzmaim",
   "short_name": "Atzmaim",
-  "start_url": "./",
+  "start_url": "/he/login",
   "scope": ".",
   "description": "Smart Calendar",
   "display": "fullscreen",
