@@ -9,7 +9,7 @@ const config = {
   defaultWorkerPhoto: 'default_worker.jpg',
   defaultClientPhoto: 'default_client.jpg',
   occasionalClientPhoto: 'anyone.svg',
-  calendar_view_type: 'agenda',
+  calendar_view_type: 'daily',
   match_view: {
     agenda: 'agendaDay',
     daily: 'daily',
@@ -410,8 +410,8 @@ const config = {
     slotLabelFormat: [
       'MMMM YYYY', 'HH:mm'
     ],
-    slotDuration: '00:60:00', // The frequency for displaying time slots
-    slotLabelInterval: '00:60:00', // The frequency that the time slots should be labelled with text
+    slotDuration: '00:15:00', // The frequency for displaying time slots
+    slotLabelInterval: '00:15:00', // The frequency that the time slots should be labelled with text
     minTime: '08:00',
     maxTime: '20:00',
     editable: true,
