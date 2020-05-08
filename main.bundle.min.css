@@ -3468,7 +3468,7 @@ body {
     --fc-header-color: #ededed;
     --month-bgcolor: #ff4c4c;
     --weekly-holiday-bgcolor: #ff4c4c;
-    --modal-bgcolor: rgba(0,0,0,0.467);
+    --modal-bgcolor: rgba(0,0,0,0.7);
     --home-dayOff-bgcolor: #ebebeb;
     --home-normalDay-bgcolor: #cdb6ff;
     --home-busyDay-bgcolor: #b593fc;
