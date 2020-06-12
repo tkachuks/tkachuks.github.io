@@ -1,7 +1,9 @@
 const baseUrl = 'https://api.bewebmaster.co.il'
 
 const config = {
+  sms_warning_trashold: 10,
   rangeOfDays: 20,
+  shouldInstallPopupShow: true,
   js_framework: 'vanilla',
   activeWorkerId: 20,
   currency: '$',
@@ -431,7 +433,7 @@ const config = {
     {text: 'logout', link: '/e n/logout', icon: 'logout.jpg'}
   ],
   user: {
-    business_logo: 'public/business_data/1/logo.jpg',
+    business_logo: 'dist/media/change_view.svg',
     business_name: 'שמעון הספר (לשעבר AQUA PLANTS )',
     business_address: '11301 West Olympic Boulevard, Apt.100'
   },
@@ -441,6 +443,7 @@ const config = {
     google_maps: 'https://maps.google.com/?q=',
     imgForWorkers: '/dist/workers/images/{worker_id}',
     get_holidays: 'https://api.bewebmaster.co.il/appointments/settings/holidays?year={YYYY}',
+    analytics_approved: 'https://api.bewebmaster.co.il/metrics/installation_popup_calendar',
     imgForClients: 'https://api.bewebmaster.co.il/public/business_data/1/clients/{client_id}/',
     // imgForClients: 'public/clients/{client_id}/',
     imgForOccasionalClients: '/dist/media/images/',
@@ -453,15 +456,20 @@ const config = {
     staticImg: 'dist/media',
     clientPage: '/clients',
     sendSmS: '/send-sms',
-    login: '/login'
+    login: '/login',
+    sms_settings_link: '/settings/sms'
   },
   translations: {
     add_to_home_screen: 'Add to home screen',
-    cancel: 'Cancel',
-    confirm: 'Confirm',
+    deletion_popup_cancel: 'Cancel',
+    deletion_popup_confirm: 'Confirm',
+    drag_cancel: 'Cancel',
+    drag_confirm: 'Confirm',
     vacation: 'Vacation',
     no_queues: 'No queues yet',
     del_question_appointment: 'Are you sure to delete the appointment of {client_name}',
+    drag_question_event_today: 'Are you sure to reschedule the event to {time}?',
+    drag_question_event_another_day: 'Are you sure to reschedule the event to {day}/{month} {time}?',
     del_question_off_time: 'Are you sure to delete the {off_time_type}',
     off_time_labels: {
       break: 'break',
@@ -469,9 +477,32 @@ const config = {
       vacation: 'vacation'
     },
     install_modal: {
-      install_title: 'Add to home screen',
-      confirm_label: 'Install',
-      cancel_label: 'Later'
+      cancel_label: 'cancel',
+      confirm_label: 'install',
+      install_title: 'add app in to home screen'
+    },
+    toast_labels: {
+      success_toast: {
+        new_appointment_booked: 'Appointment successfully booked',
+        appointment_deleted: 'Appointment successfully deleted',
+        appointment_edited: 'Appointment successfully edited',
+        new_appointment_notifications: 'Notifications will be sent to the client.',
+        deleted_appointment_notifications: 'Notifications will be sent to the client.',
+        edited_appointment_notifications: 'Notifications were sent to the client'
+      },
+      failure_toast: {
+        sending_failure_reasons: {
+          no_sms: 'You have run out of sms. Reminders wont be sent',
+          no_phone: 'No phone',
+          phone_not_valid: 'Phone not valid',
+          sending_failure: 'Phone not valid'
+        }
+      },
+      warning_toast: {
+        sending_warning_reasons: {
+          no_sms: 'У вас осталось меньше {sms_warning_trashold} смс'
+        }
+      }
     },
     empty_agenda: 'There are no queues on this day. Click the button to add a queue',
     order_queue: 'Order a queue',
@@ -507,7 +538,7 @@ const config = {
       support: 'Support',
       suggest_feature: 'Suggest a feature',
       rate_us: 'Rate us',
-      install: 'Install Atzma.im',
+      install: 'Добавить Lista на домашний экран',
       logout: 'Log out'
     },
     duration: {

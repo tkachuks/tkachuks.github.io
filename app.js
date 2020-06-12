@@ -10,19 +10,19 @@ window.addEventListener('beforeinstallprompt', e => {
   e.preventDefault()
   deferredPrompt = e
   const menuInstallBtn = document.getElementById('install')
-  console.log(menuInstallBtn)
-  const installModal = document.getElementById('installModal')
+  const installModal = document.querySelector('.installModal')
   const installModallconfirmBtn = document.getElementById('confirm-btn')
+  config.shouldInstallPopupShow && installModal.classList.remove('hiddenInstall')
   const installPrompt = e => {
-    // $('.installModal').addClass('hiddenInstall')
     deferredPrompt.prompt()
     deferredPrompt.userChoice.then(choiceResult => {
       if (choiceResult.outcome === 'accepted') {
         menuInstallBtn.classList.add('installed')
         console.log('User accepted the A2HS prompt')
+        config.shouldInstallPopupShow = false
       } else {
         console.log('User dismissed the A2HS prompt')
-        // $('.installModal').addClass('hiddenInstall')
+        config.shouldInstallPopupShow = false
       }
       deferredPrompt = null
     })
