@@ -1,64 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <base href='/'>
-        <meta name="viewport" content="width=device-width">
-        <meta charset="UTF-8">
-				<title>Calendar</title>
-				<link rel="manifest" href="./manifest.json">
-        <link href="./dist/swiper.min.css" rel="stylesheet"/>
-				<link href="./dist/fullcalendar.min.css" rel="stylesheet"/>
-				<link rel="apple-touch-icon" href="./android-chrome-192x192.png">
-        <!-- <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"> -->
-        <!-- <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"> -->
-        <!-- <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5"> -->
-        <!-- <meta name="msapplication-TileColor" content="#da532c"> -->
-        <!-- <meta name="theme-color" content="#ffffff"> -->
-    <link href="main.bundle.min.css" rel="stylesheet"></head>
-    <body>
-        <script src='./components-lib/lib/moment.min.js'></script>
-        <script src='./dist/jquery.min.js'></script>
-        <script src='./dist/swiper.jquery.min.js'></script>
-        <script src="./config.js" charset="utf-8"></script>
-        <script src='./dist/fullcalendar.min.js'></script>
-        <script src='./dist/hammer.min.js'></script>
-        <script>
-            (function(factory) {
-	    if (typeof define === 'function' && define.amd) {
-	        define(['jquery', 'hammerjs'], factory);
-	    } else if (typeof exports === 'object') {
-	        factory(require('jquery'), require('hammerjs'));
-	    } else {
-	        factory(jQuery, Hammer);
-	    }
-	}(function($, Hammer) {
-	    function hammerify(el, options) {
-	        var $el = $(el);
-	        if(!$el.data("hammer")) {
-	            $el.data("hammer", new Hammer($el[0], options));
-	        }
-	    }
-	    $.fn.hammer = function(options) {
-	        return this.each(function() {
-	            hammerify(this, options);
-	        });
-	    };
+  <head>
+    <base href='/'>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>Filling up</title>
+    <link href="./dist/main.bundle.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <script>
+      window.fbAsyncInit = function () {
+          FB.init({
+            appId: 1923449871239766,
+            cookie: true,
+            oauth: true,
+            version: 'v2.10'
+          });
+        };
 
-	    // extend the emit method to also trigger jQuery events
-	    Hammer.Manager.prototype.emit = (function(originalEmit) {
-	        return function(type, data) {
-	            originalEmit.call(this, type, data);
-	            $(this.element).trigger({
-	                type: type,
-	                gesture: data
-	            });
-	        };
-	    })(Hammer.Manager.prototype.emit);
-	}));
-				</script>
-				<script src="./app.js"></script>
-				<div id='app'>
-					<div id='calendar'></div>
-				</div>
-    <script type="text/javascript" src="main.bundle.min.js"></script></body>
+        (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) { return; }
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src='./components-lib/lib/react.production.min.js'></script>
+    <script src='./components-lib/lib/react-dom.production.min.js'></script>
+    <script src='./components-lib/lib/react-router-dom.min.js'></script>
+    <script src='./components-lib/lib/prop-types.min.js'></script>
+    <script src='./components-lib/lib/moment.min.js'></script>
+    <script src='./config.js'></script>
+    <div id='root'></div>
+    <script src="./dist/main.bundle.js"></script>
+    <script type="text/javascript" src="/dist/reactComboDatePicker.min.js"></script>
+  </body>
 </html>

@@ -1,0 +1,91 @@
+#home .welcome,
+#home .be_glad,
+#home .skip,
+#home .or_fill {
+  text-align: center;
+  color: #6b6b6b;
+  padding-bottom: 0.6rem;
+}
+#home p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+#home .skip {
+  color: #4682b4;
+  padding-bottom: 5px;
+}
+#home .soc_net {
+  display: flex;
+  justify-content: center;
+}
+#home .soc_net .facebook-wrap {
+  display: flex;
+  outline: none;
+  align-items: center;
+  border: none;
+  padding: 0.6rem 0;
+  padding-inline-end: 0.6rem;
+  background-color: #4682b4;
+  border-radius: 0.4rem;
+}
+#home .soc_net .facebook-wrap img {
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+#home .soc_net .facebook-wrap p {
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  color: #fff;
+}
+#home .sep {
+  margin-top: 1.25rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+#home .sep span {
+  color: #808080;
+  font-size: 1.25rem;
+}
+#home .or_fill {
+  padding-top: 1rem;
+}
+#home .inputs {
+  width: 90%;
+  margin: 0 auto;
+}
+#home .inputs .input_wrap {
+  padding: 0.7rem;
+  margin: 0.8rem 0;
+  border-radius: 0.6rem;
+  border: 1px solid #808080;
+  transition: border-color 0.5s;
+}
+#home .inputs .input_wrap input {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  border: none;
+  background-color: transparent !important;
+}
+#home .inputs .input_wrap.notValidEmail {
+  border: 1px solid #f00;
+}
+#home .btn-wrap {
+  padding-top: 20px;
+}
+#home .btn-wrap button {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid #808080;
+  background-color: #fff;
+}
+#home .btn-wrap button a {
+  color: #6b6b6b;
+  text-decoration: none;
+}
+

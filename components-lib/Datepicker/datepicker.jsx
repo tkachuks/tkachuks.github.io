@@ -69,7 +69,6 @@ export default class Datepicker extends React.Component {
             this.renderOptionsYear()
           }
         </select>
-
         <select className='month' value={this.props.month} onChange={this.props.handleChangeMonth}>
           <option value={config.translations.datepicker.placeholder.month} disabled>{config.translations.datepicker.placeholder.month}</option>
           {
