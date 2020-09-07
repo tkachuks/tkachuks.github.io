@@ -96,14 +96,16 @@ export default class Debts extends React.Component {
   }
 
   handleWidth = () => {
-    let width = document.getElementById('count-input').scrollWidth
+    const width = document.getElementById('count-input').scrollWidth
     document.getElementById('count-input').setAttribute('style', 'width:' + width + 'px')
   }
 
   changeInput = e => {
     const value = e.target.value
-    this.setState({ debt: value }, () => this.props.getDebt(this.state.debt))
-    this.handleWidth()
+    this.setState({ debt: value }, () => {
+      this.props.getDebt(this.state.debt)
+      this.handleWidth()
+    })
   }
 
   handleBlurInput = e => {
@@ -128,14 +130,14 @@ export default class Debts extends React.Component {
   }
 
   render () {
-    let totalPrice = this.price()
+    const totalPrice = this.price()
     const sortDebts = this.props.debtsData.sort((a, b) => moment(b.date) - moment(a.date))
     return (
       <div id='debts'>
         {(this.props.debtEdit || this.props.debtsData.length > 0) && <div className='debt-header'>
           <div className='header-text'>
             {config.translations.debts.title}
-            {totalPrice && <div className='total-debts-wrap'><span>{config.data.currency}</span>{totalPrice}</div>}
+            <div className='total-debts-wrap'><span>{config.data.currency}</span>{totalPrice || 0}</div>
           </div>
           {this.props.debtEdit &&
           <div className='btn-header' onClick={this.backButton}>
@@ -256,7 +258,7 @@ export default class Debts extends React.Component {
                 <div className='left-side'>
                   <span className={'debt-list-date ' + ((config.isRTL || config.data.isRTL) ? 'rtl-side' : '')}>{i.date}</span>
                   <div className='debt-list-name'>
-                    <label className='currency'>{i.sum}{config.data.currency}</label>
+                    <label className='currency'><span>{config.data.currency}</span>{i.sum}</label>
                     {i.desc && <div className='debt-list-desc'>
                       <span onClick={() => this.showFullDebt(i, i.id)} id={i.id}>{i.desc}</span>
                     </div>}
