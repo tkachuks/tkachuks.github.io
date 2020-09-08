@@ -1,3 +1,4 @@
+const token = 'fake'
 var config = {
   locale: 'en',
   translations: {
