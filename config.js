@@ -1,4 +1,5 @@
 var config = {
+  locale: 'en',
   translations: {
     language: 'en',
     greeting_page: {
@@ -27,14 +28,20 @@ var config = {
         third: 'Third'
       }
     },
-    welcome: 'Welcome',
-    be_glad: 'We will be glad if you fill out the following data',
-    skip: 'Skip and continue with',
-    facebook: 'Login with facebook',
-    or_fill: 'fill out the following data',
-    full_name: 'Full name',
-    email: 'Email',
-    adress: 'Adress',
+    fill_in: {
+      name_placeholder: 'Full name',
+      email_placeholder: 'Email',
+      adress_placeholder: 'Email',
+      // name_placeholder: 'Full name',
+    },
+    // welcome: 'Welcome',
+    // be_glad: 'We will be glad if you fill out the following data',
+    // skip: 'Skip and continue with',
+    // facebook: 'Login with facebook',
+    // or_fill: 'fill out the following data',
+    full_name: 'Full name', //replace
+    email: 'Email', //replace
+    adress: 'Adress', //replace
     continue: 'Continue',
     selfies: 'Want to make selfies',
     or: 'or',
@@ -85,7 +92,7 @@ var config = {
     ]
   },
   urls: {
-    adress: 'https://maps.googleapis.com/maps/api/geocode/json?address={query}&language={language}',
+    add_address: `https://api.bewebmaster.co.il/settings/maps-api-key?token=${token}`,
     add_client_url: '/add-client/clients?q={query}',
     main: 'https://api.bewebmaster.co.il',
     filling_up: '/filling-up',
@@ -105,6 +112,7 @@ var config = {
     photo: '',
     gender: '',
     birthyear: '',
+    birthdate: '',
     source: '',
     note: '',
     permit_ads: false
@@ -116,7 +124,7 @@ var config = {
   business_logo: './assets/media/ic_facebook.svg',
   business_adress: 'Tel Aviv, Allenby str. 45',
   business_desc: 'loresdfgs dgsdgsdf ffffffffffffff ffffffffs  sdgsd sd sg sgdfffffffffff sdfg sdf sd gsdf s sfgs dfgsf sd sg dsfm',
-  business_links: [{icon: 'link_facebook.svg', url: '/facebook_url'}, {icon: 'link_instagram.svg', url: '/instagram'}],
+  business_links: [{icon: 'link_facebook.svg', url: '/facebook_url'}, {icon: 'link_instagram.svg', url: '/instagram'}, {icon: 'link_facebook.svg', url: '/facebook_url'}],
   plugins: ['highres_photos'],
   timeout: 500,
   max_side: 1000,
