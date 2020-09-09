@@ -59,7 +59,6 @@ var config = {
     }
   },
   urls: {
-    add_address: `https://api.bewebmaster.co.il/settings/maps-api-key?token=${token}`,
     add_client_url: '/add-client/clients?q={query}',
     main: 'https://api.bewebmaster.co.il',
     filling_up: '/filling-up',
