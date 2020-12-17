@@ -72,7 +72,7 @@ var config = {
     }
   },
   urls: {
-    add_address: `https://api.bewebmaster.co.il/settings/maps-api-key?token=${token}`,
+    // add_address: `https://api.bewebmaster.co.il/settings/maps-api-key?token=${token}`,
     main: 'https://api.bewebmaster.co.il',
     error_page: 'https://api.bewebmaster.co.il/error_page',
     filling_up: '/filling-up',
