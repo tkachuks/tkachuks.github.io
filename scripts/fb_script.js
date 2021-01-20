@@ -5,6 +5,7 @@ window.fbAsyncInit = function () {
     oauth: true,
     version: 'v8.0'
   });
+  FB.AppEvents.logPageView();
 };
 
 (function (d, s, id) {
